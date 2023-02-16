@@ -1,37 +1,66 @@
 body{
+    margin:0px;
+    padding:0px;
     text-align: center;
     background-color: black;
-    color:#ffffff;
+    color:#979494;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
+
 }
 
 .logo{
    margin-top: 20px; 
+   width: 40%;
+
 }
 
 h1{
+    color:white;
     margin-top: 70px;
 }
 
 .box-perfil{
     display: flex; 
-    height: 150px;
+    height: auto;
     width: 700px;
-    margin: 50px;
+    gap:15px;
+    justify-content: space-around;
 }
 
 .figure-perfil{
     width: 160px;
-    height: 160px;
-    padding: 10px;
-    margin: 5px;
+    padding: 0;
+    margin: 0;
     text-align: center;
     transition: 1s;
 }
 
+.hover{
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.figure-perfil:hover .hover{
+    border: 3px solid rgba(148, 148, 148, 0.544);
+}
+
+.figure-perfil:hover figcaption{
+    color:white;
+}
+
 img{
     border-radius: 8px;
+    width:100%;
+}
+
+figcaption{
+    margin-top: 4px;  
+}
+
+.adicionar{
+    width: 50%;
 }
 
 .plus{
@@ -44,10 +73,6 @@ img{
     border-radius: 8px; 
 }
 
-.hover:hover {
-    border: 3px solid rgba(148, 148, 148, 0.544);
-}
-
 .gerenciar-perfil{
     background-color: black;
     color:white;
@@ -56,6 +81,8 @@ img{
     padding: 10px 30px;
     margin: 50px;
     transition: 1s;
+    cursor: pointer;
+
 }
 
 .gerenciar-perfil:hover{
